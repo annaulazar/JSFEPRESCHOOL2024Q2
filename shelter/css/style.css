@@ -73,6 +73,11 @@ a {
   transition: color 0.5s;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
 .text_h1 {
   font-family: 'Georgia', sans-serif;
   font-size: 44px;
@@ -94,7 +99,14 @@ a {
   font-family: 'Arial', sans-serif;
   font-size: 15px;
   line-height: 160%;
+}
+
+.p_light {
   color: var(--color-dark-s);
+}
+
+.p_dark {
+  color: var(--color-dark-xl);
 }
 
 .logo_title {
