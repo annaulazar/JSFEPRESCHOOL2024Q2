@@ -10,7 +10,8 @@
   --color-dark-3xl: #292929;
   --color-primary: #F1CDB3;
   --color-primary-light: #FDDCC4;
-  --gradient-background: url("../assets/img/noise_transparent.png"), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  --gradient-background-start: url("../assets/img/noise_transparent.png"), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  --gradient-background-footer: url("../assets/img/noise_transparent.png"), radial-gradient(549.89% 73.65% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 @font-face {
@@ -73,7 +74,11 @@ a {
   transition: color 0.5s;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
   padding: 0;
 }
