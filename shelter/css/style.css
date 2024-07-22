@@ -105,6 +105,16 @@ h1, h2, h3, h4, p {
   color: var(--color-dark-l);
 }
 
+.text_h4 {
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.9px;
+  color: var(--color-dark-l);
+}
+
 .text_p {
   font-family: 'Arial', sans-serif;
   font-size: 15px;
