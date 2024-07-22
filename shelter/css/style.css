@@ -95,6 +95,16 @@ h1, h2, h3, h4, p {
   color: var(--color-dark-l);
 }
 
+.text_h3 {
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  color: var(--color-dark-l);
+}
+
 .text_p {
   font-family: 'Arial', sans-serif;
   font-size: 15px;
@@ -132,6 +142,17 @@ h1, h2, h3, h4, p {
   line-height: 130%;
   letter-spacing: 1.02px;
   color: var(--color-dark-3xl);
+}
+
+.pet_name {
+  text-align: center;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  color: var(--color-dark-l);
 }
 
 .button {
