@@ -4,14 +4,6 @@
   width: 100%;
 }
 
-.header_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {}
-
 .logo_title {
   color: var(--color-primary);
 }
@@ -20,24 +12,15 @@
   color: var(--color-light-xl);
 }
 
-.nav {}
-
-.nav_list {
-  display: flex;
-  justify-content: space-between;
+.p_light {
+  color: var(--color-dark-s);
 }
 
-.nav_item {
-  margin-left: 36px;
-}
-
-.nav_item:first-child {
-  margin-left: 0;
+.p_dark {
+  color: var(--color-dark-xl);
 }
 
 .nav_link {}
-
-section {}
 
 .start_screen {
   padding-top: 180px;
@@ -92,11 +75,6 @@ section {}
   display: block;
 }
 
-.pets {
-  padding: 80px 0 100px;
-  background-color: var(--color-light-l);
-}
-
 .pets_content,
 .help_content {
   display: flex;
@@ -131,18 +109,6 @@ section {}
   display: flex;
   align-items: center;
   gap: 90px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  width: 270px;
-  height: 435px;
-  padding-bottom: 30px;
-  border-radius: 9px;
-  background-color: var(--color-light-s);
 }
 
 .help {
@@ -231,61 +197,4 @@ section {}
   font-weight: 400;
   line-height: 18px;
   color: var(--color-dark-m);
-}
-
-.footer {
-  padding-top: 40px;
-  background: var(--gradient-background-footer);
-}
-
-.footer_content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.footer_card {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.contacts {
-  width: 279px;
-  gap: 40px
-}
-
-.location {
-  width: 302px;
-  gap: 33px
-}
-
-.card_item {
-  white-space: nowrap;
-}
-
-.card_item img {
-  display: inline-block;
-  white-space: normal;
-  vertical-align: middle;
-  margin-right: 16px;
-}
-
-.card_item h3 {
-  display: inline-block;
-  white-space: normal;
-  vertical-align: middle;
-}
-
-.footer_h2 {
-  color: var(--color-light-xl);
-}
-
-.footer_h3 {
-  color: var(--color-primary);
-}
-
-.footer_image>img {
-  display: block;
 }

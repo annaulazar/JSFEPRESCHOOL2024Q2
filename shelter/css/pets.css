@@ -1,0 +1,62 @@
+.header {
+  background: var(--color-light-xl);
+  padding: 30px 0;
+}
+
+.logo_title {
+  color: var(--color-dark-l);
+}
+
+.logo_subtitle {
+  color: var(--color-dark-3xl);
+}
+
+.p_dark {
+  color: var(--color-dark-l);
+}
+
+.pets_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+.pets_title {
+  max-width: 400px;
+  text-align: center;
+}
+
+.cards_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  row-gap: 30px;
+  padding: 15px 0;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button_paginator {
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  color: var(--color-dark-3xl);
+}
+
+.paginator_inactive {
+  border: 2px solid var(--color-dark-s, #CDCDCD);
+  color: var(--color-dark-s);
+}
+
+.paginator_active {
+  background: var(--color-primary, #F1CDB3);
+}
