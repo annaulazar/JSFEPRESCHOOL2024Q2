@@ -71,7 +71,8 @@ ul {
 
 a {
   text-decoration: none;
-  transition: color 0.5s;
+  cursor: pointer;
+  transition: 1s;
 }
 
 h1,
@@ -166,6 +167,12 @@ p {
   padding: 15px 45px;
   border-radius: 5em;
   border: none;
+  transition: 0.5s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-light);
 }
 
 .button_primary {
@@ -173,8 +180,8 @@ p {
 }
 
 .button_secondary {
-  border: 2px solid #F1CDB3;
   padding: 13px 43px;
+  border: 2px solid #F1CDB3;
   background-color: var(--color-light-s);
 }
 
@@ -212,6 +219,20 @@ p {
   padding-bottom: 30px;
   border-radius: 9px;
   background-color: var(--color-light-s);
+  transition: 1s;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background: var(--color-light-xl);
+  cursor: pointer;
+}
+
+.card:hover button {
+  background-color: var(--color-primary-light);
+  border: none;
+  cursor: pointer;
+  transition: 1s;
 }
 
 .footer {
@@ -244,19 +265,22 @@ p {
 
 .card_item {
   white-space: nowrap;
+  transition: 1s;
 }
 
-.card_item img {
+.card_item svg {
   display: inline-block;
   white-space: normal;
   vertical-align: middle;
   margin-right: 16px;
+  transition: 1s;
 }
 
-.card_item h3 {
+.card_item .footer_h3 {
   display: inline-block;
   white-space: normal;
   vertical-align: middle;
+  transition: 1s;
 }
 
 .footer_h2 {
@@ -269,4 +293,14 @@ p {
 
 .footer_image>img {
   display: block;
+}
+
+.card_item:hover {
+  .footer_h3 {
+    color: var(--color-primary-light);
+  };
+  svg {
+    fill: var(--color-primary-light);
+    stroke: var(--color-primary-light);
+  };
 }

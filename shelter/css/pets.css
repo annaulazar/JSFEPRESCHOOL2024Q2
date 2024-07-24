@@ -11,8 +11,35 @@
   color: var(--color-dark-3xl);
 }
 
-.p_dark {
+.logo {
+  transition: 1s;
+}
+
+.logo:hover .logo_title {
+  color: var(--color-dark-3xl);
+}
+
+.logo:hover .logo_subtitle {
   color: var(--color-dark-l);
+}
+
+.nav_link {
+  color: var(--color-dark-l);
+}
+
+.nav_link:hover {
+  color: var(--color-dark-3xl);
+}
+
+.nav_link:active,
+.nav_link_active {
+  color: var(--color-dark-3xl);
+  cursor: default;
+}
+
+.nav_item:active,
+.nav_item_active {
+  border-bottom: 3px solid var(--color-primary);
 }
 
 .pets_content {
@@ -50,6 +77,7 @@
   border-radius: 50%;
   border: 2px solid var(--color-primary);
   color: var(--color-dark-3xl);
+  transition: 1s;
 }
 
 .paginator_inactive {
@@ -59,4 +87,10 @@
 
 .paginator_active {
   background: var(--color-primary, #F1CDB3);
+}
+
+.paginator_hover:hover {
+  background: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  cursor: pointer;
 }
