@@ -276,6 +276,12 @@ p {
   transition: 1s;
 }
 
+.card_item svg path {
+  fill: var(--color-primary);
+  transition: 1s;
+  /* stroke: var(--color-primary); */
+}
+
 .card_item .footer_h3 {
   display: inline-block;
   white-space: normal;
@@ -295,12 +301,12 @@ p {
   display: block;
 }
 
-.card_item:hover {
-  .footer_h3 {
-    color: var(--color-primary-light);
-  };
-  svg {
-    fill: var(--color-primary-light);
-    stroke: var(--color-primary-light);
-  };
+.card_item:hover .footer_h3 {
+  color: var(--color-dark-2xl);
 }
+
+.card_item:hover svg path {
+  fill: var(--color-primary-light);
+  stroke: var(--color-primary-light);
+}
+
