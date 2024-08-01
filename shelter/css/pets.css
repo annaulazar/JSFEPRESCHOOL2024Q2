@@ -5,14 +5,16 @@
 
 .logo_title {
   color: var(--color-dark-l);
+  transition: 0.5s;
 }
 
 .logo_subtitle {
   color: var(--color-dark-3xl);
+  transition: 0.5s;
 }
 
 .logo {
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .logo:hover .logo_title {
@@ -77,7 +79,7 @@
   border-radius: 50%;
   border: 2px solid var(--color-primary);
   color: var(--color-dark-3xl);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .paginator_inactive {

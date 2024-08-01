@@ -5,17 +5,17 @@
 }
 
 .logo {
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .logo_title {
   color: var(--color-primary);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .logo_subtitle {
   color: var(--color-light-xl);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .logo:hover .logo_title {
@@ -133,7 +133,7 @@
   padding: 21px 17px;
   border-radius: 100px;
   border: 2px solid #F1CDB3;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .button_arrow:hover {
@@ -218,7 +218,7 @@
   padding: 10px 13px;
   border-radius: 9px;
   background-color: var(--color-primary);
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .number>img {

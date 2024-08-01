@@ -72,7 +72,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 h1,
@@ -219,7 +219,11 @@ p {
   padding-bottom: 30px;
   border-radius: 9px;
   background-color: var(--color-light-s);
-  transition: 1s;
+  transition: 0.5s;
+}
+
+.card button {
+  transition: 0.5s;
 }
 
 .card:hover {
@@ -232,7 +236,6 @@ p {
   background-color: var(--color-primary-light);
   border: none;
   cursor: pointer;
-  transition: 1s;
 }
 
 .footer {
@@ -265,7 +268,6 @@ p {
 
 .card_item {
   white-space: nowrap;
-  transition: 1s;
 }
 
 .card_item svg {
@@ -273,20 +275,18 @@ p {
   white-space: normal;
   vertical-align: middle;
   margin-right: 16px;
-  transition: 1s;
 }
 
 .card_item svg path {
-  fill: var(--color-primary);
-  transition: 1s;
-  /* stroke: var(--color-primary); */
+  fill: "#F1CDB3";
+  transition: 0.5s;
 }
 
 .card_item .footer_h3 {
   display: inline-block;
   white-space: normal;
   vertical-align: middle;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .footer_h2 {
@@ -302,11 +302,9 @@ p {
 }
 
 .card_item:hover .footer_h3 {
-  color: var(--color-dark-2xl);
+  color: var(--color-dark-m);
 }
 
 .card_item:hover svg path {
-  fill: var(--color-primary-light);
-  stroke: var(--color-primary-light);
+  fill: var(--color-dark-m);
 }
-
