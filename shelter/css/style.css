@@ -308,3 +308,22 @@ p {
 .card_item:hover svg path {
   fill: var(--color-dark-m);
 }
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  
+}
+
+
+@media (max-width: 576px) {
+  .container {
+      padding: 0 10px;
+    }
+  
+    
+}
