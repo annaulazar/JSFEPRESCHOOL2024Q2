@@ -133,10 +133,15 @@
   text-align: center;
 }
 
+.card_mobile {
+  display: none;
+}
+
 .slider {
   display: flex;
   align-items: center;
-  gap: 53px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .button_arrow {
@@ -159,7 +164,13 @@
 .slider_pets {
   display: flex;
   align-items: center;
-  gap: 90px;
+  justify-content: space-between;
+  width: 990px;
+  margin: 0 12px;
+}
+
+.slider .card:not(:first-child) {
+  margin-left: 20px;
 }
 
 .help {
@@ -310,6 +321,16 @@
   }
 }
 
+@media (max-width: 1058px) {
+  .slider_pets {
+    max-width: 640px;
+  }
+
+  .slider .card:last-child {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .content_1 {
     max-width: 600px;
@@ -319,6 +340,18 @@
   .content_2 {
     max-width: 600px;
     padding: 0 85px;
+  }
+
+  .pets_content {
+    padding: 0 15px;
+  }
+
+  .slider_pets {
+    max-width: 270px;
+  }
+
+  .slider .card:nth-child(2) {
+    display: none;
   }
 
 }
@@ -373,5 +406,32 @@
   .about_image img {
     width: 100%;
   }
+
+}
+
+@media (max-width: 448px) {
+  .pets {
+    padding: 42px 0;
+  }
+
+  .pets_content {
+    gap: 42px;
+    padding: 0;
+  }
+
+  .card_mobile {
+    display: flex;
+  }
+
+  .slider {
+    max-width: 187px;
+    margin-top: -24px;
+  }
+
+  .slider .card:first-child {
+    display: none;
+  }
+
+
 
 }
