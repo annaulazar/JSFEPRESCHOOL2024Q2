@@ -204,6 +204,19 @@ p {
   margin-left: 0;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+}
+
+.burger_item {
+  width: 30px;
+  height: 2px;
+}
+
 .pets {
   padding: 80px 0 100px;
   background-color: var(--color-light-l);
@@ -316,14 +329,19 @@ p {
 }
 
 @media (max-width: 767px) {
-  
-}
+  .burger {
+    display: flex;
+  }
 
+  .nav {
+    display: none;
+  }
+}
 
 @media (max-width: 576px) {
   .container {
-      padding: 0 10px;
-    }
-  
-    
+    padding: 0 10px;
+  }
+
+
 }

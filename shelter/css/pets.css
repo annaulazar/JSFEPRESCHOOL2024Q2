@@ -44,6 +44,10 @@
   border-bottom: 3px solid var(--color-primary);
 }
 
+.burger_item {
+  background-color: black;
+}
+
 .pets_content {
   display: flex;
   flex-direction: column;

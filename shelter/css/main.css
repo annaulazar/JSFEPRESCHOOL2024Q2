@@ -48,6 +48,10 @@
   border-bottom: 3px solid var(--color-primary);
 }
 
+.burger_item {
+  background-color: var(--color-primary);
+}
+
 .start_screen {
   padding-top: 180px;
   background: var(--gradient-background-start);
