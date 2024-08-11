@@ -63,6 +63,7 @@
 .cards_container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
   row-gap: 30px;
@@ -99,4 +100,45 @@
   background: var(--color-primary-light);
   border: 2px solid var(--color-primary-light);
   cursor: pointer;
+}
+
+@media (max-width: 949px) {
+  .pets {
+    padding: 80px 0 75px;
+  }
+
+  .pets_content {
+    gap: 30px;
+
+  }
+
+  .cards_container {
+    padding: 0 0 10px;
+  }
+
+  .card:nth-child(7),
+  .card:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .pets {
+    padding: 80px 0 75px;
+  }
+
+  .pets_content {
+    gap: 30px;
+
+  }
+
+  .cards_container {
+    padding: 0 0 10px;
+  }
+
+  .card:nth-child(4),
+  .card:nth-child(5),
+  .card:nth-child(6) {
+    display: none;
+  }
 }
