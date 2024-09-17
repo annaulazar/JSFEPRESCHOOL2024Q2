@@ -276,7 +276,7 @@ p {
 }
 
 .location {
-  width: 302px;
+  width: 300px;
   gap: 33px
 }
 
@@ -286,7 +286,6 @@ p {
 
 .card_item svg {
   display: inline-block;
-  white-space: normal;
   vertical-align: middle;
   margin-right: 16px;
 }
@@ -296,19 +295,17 @@ p {
   transition: 0.5s;
 }
 
-.card_item .footer_h3 {
+.footer_h3 {
   display: inline-block;
   white-space: normal;
   vertical-align: middle;
   transition: 0.5s;
+  max-width: 258px;
+  color: var(--color-primary);
 }
 
 .footer_h2 {
   color: var(--color-light-xl);
-}
-
-.footer_h3 {
-  color: var(--color-primary);
 }
 
 .footer_image>img {
