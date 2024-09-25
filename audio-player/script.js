@@ -1,4 +1,5 @@
 const audio = document.querySelector(".audio");
+const coverImg = document.querySelector(".cover__img");
 const playButton = document.querySelector(".btn-play");
 const playButtonImg = document.querySelector(".btn-play>img");
 const prevButton = document.querySelector(".btn-prev");
@@ -23,7 +24,6 @@ const songs = [
     }
 ]
 
-// console.log(audio.srcElement);
 let currentSong = 0;
 
 function getTime(seconds) {
@@ -36,7 +36,7 @@ function getTime(seconds) {
 function setSong(ind) {
     document.querySelector(".song__author").innerHTML = songs[ind].author;
     document.querySelector(".song__title").innerHTML = songs[ind].title;
-    document.querySelector(".cover__img").src = `assets/img/${songs[ind].img}`;
+    coverImg.src = `assets/img/${songs[ind].img}`;
     document.querySelector(".blur").style.backgroundImage = `url(assets/img/${songs[ind].img})`;
     audio.src = `assets/audio/${songs[ind].song}`;
     audio.onloadedmetadata = () => {
@@ -50,13 +50,17 @@ setSong(currentSong);
 function play() {
     audio.classList.add('play');
     audio.play();
-    playButtonImg.src = 'assets/svg/pause.png'
+    playButtonImg.src = 'assets/svg/pause.png';
+    coverImg.classList.add('active');
+    coverImg.classList.remove('inactive');
 }
 
 function pause() {
     audio.classList.remove('play');
     audio.pause();
     playButtonImg.src = 'assets/svg/play.png';
+    coverImg.classList.add('inactive');
+    coverImg.classList.remove('active');
 }
 
 playButton.addEventListener('click', () => {
@@ -90,7 +94,6 @@ function progress(e) {
     progressBar.value = progress ? progress : 0;
     let time = currentTime ? currentTime : 0;
     timeCurrent.innerHTML = getTime(time);
-
 }
 
 audio.addEventListener('timeupdate', progress)

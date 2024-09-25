@@ -62,6 +62,15 @@ body {
 
 .cover__img {
     width: 100%;
+    transform: scale(1);
+}
+
+.cover__img.active {
+    animation: imgScale 2s forwards;
+}
+
+.cover__img.inactive {
+    animation: imgUnScale 2s forwards;
 }
 
 .player__info {
@@ -118,6 +127,13 @@ body {
 
 .btn {
     filter: invert(1);
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    filter: invert(0.7);
+    transform: scale(1.1);
 }
 
 .btn-prev,
@@ -135,3 +151,20 @@ body {
     width: 100%;
 }
 
+@keyframes imgScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes imgUnScale {
+    0% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
