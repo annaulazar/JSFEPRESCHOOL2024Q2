@@ -72,16 +72,16 @@ body {
     gap: 20px;
 }
 
-.title {
+.song {
     text-align: center;
 }
 
-.title__author {
+.song__author {
     font-size: 24px;
     font-weight: 700;
 }
 
-.title__song {
+.song__title {
     font-size: 16px;
 }
 
