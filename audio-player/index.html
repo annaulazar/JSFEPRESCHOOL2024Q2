@@ -16,14 +16,14 @@
             <div class="cover">
                 <img src="assets/img/lemonade.png" alt="cover" class="cover__img">
             </div>
-            <audio class="audio" src="assets/audio/beyonce.mp3"></audio>
+            <audio class="audio" src="assets/audio/beyonce.mp3" id="audio"></audio>
             <div class="player__info">
                 <div class="song">
                     <div class="song__author">Beyonce</div>
                     <div class="song__title">Don't Hurt Yourself</div>
                 </div>
                 <div class="progress">
-                    <input type="range" min="0" max="100" value="10" name="range" id="progress-bar" class="progress__input">
+                    <input type="range" min="0" max="100" value="0" name="range" id="progress-bar" oninput="setTime(this.value)">
                     <div class="time time__current">0:00</div>
                     <div class="time time__all">3:53</div>
                 </div>

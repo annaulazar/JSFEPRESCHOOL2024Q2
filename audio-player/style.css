@@ -90,7 +90,7 @@ body {
 }
 
 .btn,
-.progress__input {
+#progress-bar {
     cursor: pointer;
 }
 
