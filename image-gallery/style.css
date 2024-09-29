@@ -7,7 +7,35 @@
     src: url("./fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
-    /*background: blue;*/
+    background: black;
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2vw;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo__title {
+    margin: 0;
+    font-size: 2rem;
 }
