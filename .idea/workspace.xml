@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58bc404b-6844-46d2-b4ce-1a5da5243350" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/random-game/img/github-mark-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-game/img/github-mark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-game/img/rs-school-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-game/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-game/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-game/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/random-game/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/random-game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random-game/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/random-game/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,7 @@
       <workItem from="1727363791603" duration="10661000" />
       <workItem from="1727616898316" duration="2000" />
       <workItem from="1727874196927" duration="121000" />
-      <workItem from="1727874327625" duration="3325000" />
+      <workItem from="1727874327625" duration="15606000" />
     </task>
     <servers />
   </component>
