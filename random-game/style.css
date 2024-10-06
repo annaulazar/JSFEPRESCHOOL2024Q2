@@ -102,3 +102,44 @@ body {
 .footer_logo {
     height: 7vh;
 }
+
+.game__field > div.red {
+    background-color: red;
+}
+
+.game__field > div.yellow {
+    background-color: yellow;
+}
+
+.game__field > div.blue {
+    background-color: blue;
+}
+
+.game__field > div.green {
+    background-color: green;
+}
+
+.game__field > div.violet {
+    background-color: violet;
+}
+
+.game__field > div.orange {
+    background-color: orange;
+}
+
+.game__field > div.cyan {
+    background-color: cyan;
+}
+
+.game__field > div.red,
+.game__field > div.yellow,
+.game__field > div.blue,
+.game__field > div.green,
+.game__field > div.violet,
+.game__field > div.orange,
+.game__field > div.cyan {
+    box-shadow: inset 0 5px 8px 0px rgba(255, 255, 255, 0.3),
+    inset -5px 0 8px 0px rgba(0, 0, 0, 0.1),
+    inset 5px 0 3px 0px rgba(0, 0, 0, 0.2),
+    inset 0 -5px 3px 0px rgba(0, 0, 0, 0.3);
+}
