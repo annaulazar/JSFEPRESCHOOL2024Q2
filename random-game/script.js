@@ -1,19 +1,47 @@
 import {Game} from "./src/game.js"
 import {FIELD_COLUMNS, FIELD_ROWS} from "./src/constants.js";
 
-const game = new Game();
+let game = new Game();
 window.game = game;
-console.log(game);
+
 const cells = document.querySelectorAll(".game__field>div");
 const score = document.querySelector(".score__value");
 const lines = document.querySelector(".lines__value");
 const level = document.querySelector(".level__value");
+const playButton = document.querySelector(".button_play");
+const restartButton = document.querySelector(".button_restart");
+const finishButton = document.querySelector(".button_finish");
 
 let requestId;
 let timeoutId;
 
-moveDown();
-document.addEventListener("keydown", onKeydown);
+playButton.addEventListener("click", playPause);
+
+
+function playPause() {
+    finishButton.addEventListener("click", gameOver);
+    restartButton.addEventListener("click", restartGame);
+    playButton.classList.toggle("play");
+    if (playButton.classList.contains("play")) {
+        document.addEventListener("keydown", onKeydown);
+        moveDown();
+        playButton.innerHTML = "PAUSE";
+    } else {
+        playButton.innerHTML = "PLAY";
+        stopLoop();
+        document.removeEventListener("keydown", onKeydown);
+    }
+}
+
+function restartGame() {
+    game = new Game();
+    playButton.classList.add("play")
+    document.addEventListener("keydown", onKeydown);
+    playButton.addEventListener("click", playPause);
+    finishButton.addEventListener("click", gameOver);
+    moveDown();
+    playButton.innerHTML = "PAUSE";
+}
 
 function draw() {
     cells.forEach(cell => cell.removeAttribute("class"));
@@ -96,8 +124,10 @@ function stopLoop() {
 
 function gameOver() {
     stopLoop();
-    document.removeEventListener("keydown", onKeydown);
+    // document.removeEventListener("keydown", onKeydown);
     gameOverAnimation();
+    playButton.removeEventListener("click", playPause);
+    finishButton.removeEventListener("click", gameOver)
 }
 
 function gameOverAnimation() {
