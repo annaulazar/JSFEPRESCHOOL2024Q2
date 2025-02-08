@@ -1,0 +1,170 @@
+:root {
+    --color-fone: linear-gradient(45deg, #29263d, #66619b);
+    --color-text: #e4e3e5;
+    --color-progress: #29233d;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: var(--color-text);
+}
+
+body {
+    background: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets/img/lemonade.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.player {
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+    background: var(--color-fone);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+
+}
+
+.cover__img {
+    width: 100%;
+    transform: scale(1);
+}
+
+.cover__img.active {
+    animation: imgScale 2s forwards;
+}
+
+.cover__img.inactive {
+    animation: imgUnScale 2s forwards;
+}
+
+.player__info {
+    padding: 20px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.song {
+    text-align: center;
+}
+
+.song__author {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.song__title {
+    font-size: 16px;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.btn,
+#progress-bar {
+    cursor: pointer;
+}
+
+.progress {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: space-between;
+    row-gap: 5px;
+}
+
+#progress-bar {
+    width: 100%;
+    flex-grow: 2;
+    height: 5px;
+    accent-color: var(--color-progress);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    filter: invert(1);
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    filter: invert(0.7);
+    transform: scale(1.1);
+}
+
+.btn-prev,
+.btn-next {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-play {
+    width: 50px;
+    height: 50px;
+}
+
+.btn > img {
+    width: 100%;
+}
+
+@keyframes imgScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes imgUnScale {
+    0% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
