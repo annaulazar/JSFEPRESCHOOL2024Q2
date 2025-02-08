@@ -1,0 +1,393 @@
+:root {
+  --color-light-s: #FAFAFA;
+  --color-light-l: #F6F6F6;
+  --color-light-xl: #FFF;
+  --color-dark-s: #CDCDCD;
+  --color-dark-m: #B2B2B2;
+  --color-dark-l: #545454;
+  --color-dark-xl: #4C4C4C;
+  --color-dark-2xl: #444444;
+  --color-dark-3xl: #292929;
+  --color-primary: #F1CDB3;
+  --color-primary-light: #FDDCC4;
+  --gradient-background-start: url("../assets/img/noise_transparent.png"), radial-gradient(237.5% 111.8% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  --gradient-background-footer: url("../assets/img/noise_transparent.png"), radial-gradient(549.89% 73.65% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+@font-face {
+  font-family: Arial;
+  src: url("../assets/fonts/arial/arial-regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Arial;
+  src: url("../assets/fonts/arial/arial-italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url("../assets/fonts/georgia/georgia-regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url("../assets/fonts/georgia/georgia-bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url("../assets/fonts/georgia/georgia-italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text_h1 {
+  font-family: 'Georgia', sans-serif;
+  font-size: 44px;
+  line-height: 130%;
+  font-weight: 400;
+  color: var(--color-light-xl);
+}
+
+.text_h2 {
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 2.1px;
+  color: var(--color-dark-l);
+}
+
+.text_h3,
+.footer_h3 {
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 1.2px;
+  color: var(--color-dark-l);
+}
+
+.text_h4 {
+  font-family: Georgia;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0.9px;
+  color: var(--color-dark-l);
+}
+
+.text_p {
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.logo_title {
+  font-family: 'Georgia', sans-serif;
+  font-size: 32px;
+  line-height: 110%;
+  font-weight: 400;
+  letter-spacing: 1.92px;
+}
+
+.logo_subtitle {
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.4px;
+  text-align: right;
+}
+
+.text_button {
+  font-family: Georgia;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1.02px;
+  color: var(--color-dark-3xl);
+}
+
+.pet_name {
+  text-align: center;
+  font-family: Georgia;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  color: var(--color-dark-l);
+}
+
+.button {
+  padding: 15px 45px;
+  border-radius: 5em;
+  border: none;
+  transition: 0.5s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-light);
+}
+
+.button_primary {
+  background-color: var(--color-primary);
+}
+
+.button_secondary {
+  padding: 13px 43px;
+  border: 2px solid #F1CDB3;
+  background-color: var(--color-light-s);
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_item {
+  margin-left: 36px;
+}
+
+.nav_item:first-child {
+  margin-left: 0;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+}
+
+.burger_item {
+  width: 30px;
+  height: 2px;
+}
+
+.pets {
+  padding: 80px 0 100px;
+  background-color: var(--color-light-l);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 270px;
+  height: 435px;
+  padding-bottom: 30px;
+  border-radius: 9px;
+  background-color: var(--color-light-s);
+  transition: 0.5s;
+}
+
+.card button {
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background: var(--color-light-xl);
+  cursor: pointer;
+}
+
+.card:hover button {
+  background-color: var(--color-primary-light);
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  padding-top: 40px;
+  background: var(--gradient-background-footer);
+}
+
+.footer_content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer_card {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacts {
+  width: 279px;
+  gap: 40px
+}
+
+.location {
+  width: 302px;
+  gap: 33px
+}
+
+.card_item {
+  white-space: nowrap;
+}
+
+.card_item svg {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+.card_item svg path {
+  fill: "#F1CDB3";
+  transition: 0.5s;
+}
+
+.card_item .footer_h3 {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+
+.footer_h2 {
+  color: var(--color-light-xl);
+}
+
+.footer_h3 {
+  color: var(--color-primary);
+}
+
+.footer_image>img {
+  display: block;
+}
+
+.card_item:hover .footer_h3 {
+  color: var(--color-dark-m);
+}
+
+.card_item:hover svg path {
+  fill: var(--color-dark-m);
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .footer {
+    padding-top: 30px;
+  }
+
+  .footer_content {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 65px;
+  }
+
+  .footer_card {
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .footer_content {
+    row-gap: 40px;
+  }
+
+  .footer_card {
+    align-items: center;
+  }
+
+  .location {
+    gap: 40px;
+    
+  }
+
+  .footer_h2 {
+    margin: 0 15px;
+  }
+
+  .location a {
+    align-self: start;
+  }
+
+  .footer_image {
+    max-width: 300px;
+    margin: 0 20px;
+  }
+
+  .footer_image > img {
+    width: 100%;
+  }
+}

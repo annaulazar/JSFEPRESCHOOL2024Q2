@@ -1,0 +1,162 @@
+.header {
+  background: var(--color-light-xl);
+  padding: 30px 0;
+}
+
+.logo_title {
+  color: var(--color-dark-l);
+  transition: 0.5s;
+}
+
+.logo_subtitle {
+  color: var(--color-dark-3xl);
+  transition: 0.5s;
+}
+
+.logo {
+  transition: 0.5s;
+}
+
+.logo:hover .logo_title {
+  color: var(--color-dark-3xl);
+}
+
+.logo:hover .logo_subtitle {
+  color: var(--color-dark-l);
+}
+
+.nav_link {
+  color: var(--color-dark-l);
+}
+
+.nav_link:hover {
+  color: var(--color-dark-3xl);
+}
+
+.nav_link:active,
+.nav_link_active {
+  color: var(--color-dark-3xl);
+  cursor: default;
+}
+
+.nav_item:active,
+.nav_item_active {
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.burger_item {
+  background-color: black;
+}
+
+.pets_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+.pets_title {
+  max-width: 400px;
+  text-align: center;
+}
+
+.cards_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  row-gap: 30px;
+  padding: 15px 0;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button_paginator {
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  color: var(--color-dark-3xl);
+  transition: 0.5s;
+}
+
+.paginator_inactive {
+  border: 2px solid var(--color-dark-s, #CDCDCD);
+  color: var(--color-dark-s);
+}
+
+.paginator_active {
+  background: var(--color-primary, #F1CDB3);
+}
+
+.paginator_hover:hover {
+  background: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+  cursor: pointer;
+}
+
+@media (max-width: 949px) {
+  .pets {
+    padding: 80px 0 75px;
+  }
+
+  .pets_content {
+    gap: 30px;
+  }
+
+  .cards_container {
+    padding: 0 0 10px;
+  }
+
+  .card:nth-child(7),
+  .card:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .card:nth-child(4),
+  .card:nth-child(5),
+  .card:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding: 30px 10px;
+  }
+
+  .pets {
+    padding: 42px 0 41px;
+  }
+
+  .text_h2 {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+  }
+
+  .pets_content {
+    gap: 42px;
+  }
+
+  .cards_container {
+    padding: 0;
+  }
+
+  .footer_h2 {
+    text-align: center;
+  }
+
+  .paginator {
+    gap: 10px;
+  }
+}
