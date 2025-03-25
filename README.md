@@ -12,6 +12,8 @@
    ![Скриншот 26-09-2024 015312](https://github.com/user-attachments/assets/cfdacd2f-3660-4b8c-ab9f-ee4b173cc5b2)
 
 3. Game Tetris
+
+Оформление не доделано до конца, игра рабочая
     Deploy: [link](https://annaulazar.github.io/JSFEPRESCHOOL2024Q2/random-game/)
 
    
